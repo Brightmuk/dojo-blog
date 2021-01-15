@@ -1,0 +1,37 @@
+{
+    "blogs":[
+        {
+            "title":"Creating a website",
+            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+            "author":"Bright",
+            "postTime":"12th June 2020",
+            "id":1
+        },
+        {
+            "title":"The new technologies",
+            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+            "author":"Celestine",
+            "postTime":"19th May 2020",
+            "id":2
+        },
+        {
+            "title":"Is Apple a scum",
+            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+            "author":"Dwayne",
+            "postTime":"10th August 2020",
+            "id":3},
+        {
+            "title":"The best foods for kids",
+            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+            "author":"Dwayne",
+            "postTime":"9th August 2020",
+            "id":4},
+        {
+            "title":"How to grow taller",
+            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+            "author":"James",
+            "postTime":"12th november 2020",
+            "id":5
+        }
+     ]
+}

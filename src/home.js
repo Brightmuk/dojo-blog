@@ -1,21 +1,43 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import BlogList from './BlogList';
+import Loader from './Loader';
+
 const Home = () => {
-    const [blogs, setBlogs] =useState([
-       {title:"Creating a website",body:"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",author:"Bright",id:1},
-       {title:"The new technologies",body:"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",author:"Celestine",id:2},
-       {title:"Is Apple a scum",body:"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",author:"Dwayne",id:3},
-       {title:"The best foods for kids",body:"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",author:"Meek mill",id:4},
-       {title:"How to grow taller",body:"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",author:"James",id:5},
-    ]);
+    const [blogs, setBlogs] = useState(null);
+    const [error, setError] = useState(null);
+
+    const handleDelete = (id)=>{
+      const newBlogs = blogs.filter(blog=>blog.id!==id)
+      setBlogs(newBlogs);
+    }
+    useEffect(()=>{
+     fetch(' http://localhost:8000/blogs')
+     .then(res=>{
+        if(!res.ok){
+          throw Error('An error occured, try again later.')
+        }
+        return res.json()
+     })
+     .then(data=>{
+        console.log(data);
+        setBlogs(data)
+        setError(null);
+     })
+     .catch(err=>{
+      setError(err.message);
+      setBlogs([]);
+     })
+    },[])
 
     return ( 
         <div className="home">
-           {blogs.map((blog)=>(
-              <div className="blog-preview" key={blog.id}>
-                 <h2>{blog.title}</h2>
-                 <p> by {blog.author}</p>
-              </div>
-           ))}
+           {error && <div className="text-center danger-text">{error}</div>}
+          { 
+         blogs!=null?
+           <BlogList blogs={blogs} title="Today's blogs" handleDelete={handleDelete}/>
+           :<Loader/>
+          }
+
         </div>
      );
 }
