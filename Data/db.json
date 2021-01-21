@@ -1,37 +1,59 @@
 {
-    "blogs":[
-        {
-            "title":"Creating a website",
-            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
-            "author":"Bright",
-            "postTime":"12th June 2020",
-            "id":1
-        },
-        {
-            "title":"The new technologies",
-            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
-            "author":"Celestine",
-            "postTime":"19th May 2020",
-            "id":2
-        },
-        {
-            "title":"Is Apple a scum",
-            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
-            "author":"Dwayne",
-            "postTime":"10th August 2020",
-            "id":3},
-        {
-            "title":"The best foods for kids",
-            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
-            "author":"Dwayne",
-            "postTime":"9th August 2020",
-            "id":4},
-        {
-            "title":"How to grow taller",
-            "body":"First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
-            "author":"James",
-            "postTime":"12th november 2020",
-            "id":5
-        }
-     ]
+  "blogs": [
+    {
+      "title": "Creating a website",
+      "body": "First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+      "author": "Bright",
+      "postTime": "12th June 2020",
+      "id": 1
+    },
+    {
+      "title": "The new technologies",
+      "body": "First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+      "author": "Celestine",
+      "postTime": "19th May 2020",
+      "id": 2
+    },
+    {
+      "title": "Is Apple a scum",
+      "body": "First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+      "author": "Dwayne",
+      "postTime": "10th August 2020",
+      "id": 3
+    },
+    {
+      "title": "The best foods for kids",
+      "body": "First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+      "author": "Dwayne",
+      "postTime": "9th August 2020",
+      "id": 4
+    },
+    {
+      "title": "How to grow taller",
+      "body": "First, a quick review: Git uses a series of configuration files to determine non-default behavior that you may want. The first place Git looks for these values is in the system-wide [path]/etc/gitconfig file, which contains settings that are applied to every user on the system and all of their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.",
+      "author": "James",
+      "postTime": "12th november 2020",
+      "id": 5
+    },
+    {
+      "title": "How tv works",
+      "body": "Television is certainly one of the most influential forces of our time. Through the device called a television set or TV, you are able to receive news, sports, entertainment, information and commercials. The average American spends between two and five hours a day glued to \"the tube\"!\n\nHave you ever wondered about the technology that makes television possible? How is it that dozens or hundreds of channels of full-motion video arrive at your house, in many cases for free? How does your television decode the signals to produce the picture? How will the new digital television signals change things? If you have ever wondered about your television (or, for that matter, about your computer monitor), then read on! In this article, we'll answer all of these questions and more. See the next page to get started.",
+      "author": "Bright",
+      "id": 6
+    },
+    {
+      "title": "What are vectors",
+      "body": "Vector graphics are computer graphics images that are defined in terms of points on a Cartesian plane, which are connected by lines and curves to form polygons and other shapes. Vector graphics have the unique advantage over raster graphics in that the points, lines, and curves may be scaled up or down to any resolution with no aliasing. The points determine the direction of the vector path; each path may have various properties including values for stroke color, shape, curve, thickness, and fill",
+      "author": "Dwayne",
+      "postTime": "12th June 2020",
+      "id": 7
+    },
+    {
+      "title": "Creating a virtual environment",
+      "body": "venv (for Python 3) and virtualenv (for Python 2) allow you to manage separate package installations for different projects. They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. When you switch projects, you can simply create a new virtual environment and not have to worry about breaking the packages installed in the other environments. It is always recommended to use a virtual environment while developing Python applications.\n\nTo create a virtual environment, go to your project’s directory and run venv. If you are using Python 2, replace venv with virtualenv in the below commands.",
+      "author": "Dwayne",
+      "postTime": "Thu Jan 21 2021",
+      "id": 8
+    }
+  ]
 }
