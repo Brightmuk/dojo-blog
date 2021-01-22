@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loader from "./Loader";
 import useFetch from "./UseFetch";
 
@@ -9,6 +9,10 @@ const BlogDetails = () => {
 
     return ( 
         <div className="blog-details">
+            <Link to="/">
+            <p className="text-link">Back</p>
+            </Link>
+            <br/>
             {error && <div>{error}</div>}
             {blog!=null?
             <div className="blog">
