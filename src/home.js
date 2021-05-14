@@ -4,7 +4,7 @@ import Loader from './Loader';
 import useFetch from './UseFetch';
 
 const Home = () => {
-    const {data:blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
+    const {data:blogs, isPending, error} = useFetch(' https://my-json-server.typicode.com/brightmuk/dojo-blog/blogs');
 
     return ( 
         <div className="home">
