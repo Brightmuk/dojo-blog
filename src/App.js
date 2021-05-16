@@ -1,36 +1,25 @@
-import Navbar from './Navbar';
-import Home from './Home';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Create from './Create';
-import BlogDetails from './BlogDetails';
-import NotFound from './NotFound';
+import React, {Component} from 'react';
+import Contacts from './components/contacts';
 
-function App() {
+class App extends Component {
+    render() {
+        return (
+            <Contacts contacts={this.state.contacts} />
+        )
+    }
 
-  return (
-    <Router>
-    <div className="App">
-      <Navbar/>
-      <div className="content">
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route  path="/create">
-            <Create/>
-          </Route>
-          <Route  path="/blog/:id">
-            <BlogDetails/>
-          </Route>
-          <Route path="*">
-            <NotFound/>
-          </Route>
-        </Switch>
+    state = {
+        contacts: []
+    };
 
-      </div>
-    </div>
-    </Router>
-  );
+    componentDidMount() {
+        fetch('http://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then((data) => {
+                this.setState({ contacts: data })
+            })
+            .catch(console.log)
+    }
 }
 
 export default App;
